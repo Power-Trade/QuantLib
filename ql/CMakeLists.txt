@@ -2305,6 +2305,8 @@ if(WIN32)
 else()
     add_library(${QL_OUTPUT_NAME} ${QuantLib_SRC} ${QuantLib_HDR})
 endif()
+target_compile_definitions(${QL_OUTPUT_NAME} PUBLIC HAVE_CONFIG_H=1)
+target_include_directories(${QL_OUTPUT_NAME} PUBLIC ${PROJECT_BINARY_DIR})
 set(QL_LINK_LIBRARY ${QL_OUTPUT_NAME} PARENT_SCOPE)
 
 foreach(file ${QuantLib_HDR})

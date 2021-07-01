@@ -36,5 +36,5 @@ Note: There is no support for thread safety and multiple sessions." OFF)
 # Config the ANSI config file into the build directory. Users
 # need to change userconfig.hpp if they require different settings.
 #
-configure_file(${CMAKE_SOURCE_DIR}/cmake/config.ansi.hpp.in ${PROJECT_BINARY_DIR}/config.hpp )
+configure_file(${CMAKE_SOURCE_DIR}/cmake/config.ansi.hpp.in ${PROJECT_BINARY_DIR}/ql/config.hpp )
 install(FILES ${PROJECT_BINARY_DIR}/config.hpp DESTINATION include/ql)
