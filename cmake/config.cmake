@@ -37,4 +37,4 @@ Note: There is no support for thread safety and multiple sessions." OFF)
 # need to change userconfig.hpp if they require different settings.
 #
 configure_file(${CMAKE_SOURCE_DIR}/cmake/config.ansi.hpp.in ${PROJECT_BINARY_DIR}/ql/config.hpp )
-install(FILES ${PROJECT_BINARY_DIR}/config.hpp DESTINATION include/ql)
+install(FILES ${PROJECT_BINARY_DIR}/ql/config.hpp DESTINATION include/ql)
